@@ -16,6 +16,8 @@ gate/*.gsf
 sbst/*.elf
 sbst/*.map
 sbst/*.hex
+example_sbst/tdf/*
+
 
 # Original .gitignore
 TAGS
