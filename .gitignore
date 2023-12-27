@@ -17,7 +17,7 @@ sbst/*.elf
 sbst/*.map
 sbst/*.hex
 example_sbst/tdf/*
-
+example_tb/core/*
 
 # Original .gitignore
 TAGS
