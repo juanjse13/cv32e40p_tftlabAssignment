@@ -43,3 +43,4 @@ foreach element $lines {
 }
 puts $blocks_list
 puts $nb_slacks_list
+puts " "

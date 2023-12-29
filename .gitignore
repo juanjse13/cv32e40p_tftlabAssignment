@@ -40,3 +40,7 @@ TAGS
 /build
 /Bender.lock
 /Bender.local
+
+
+dump.txt
+tmp.tcl
