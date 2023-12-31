@@ -6,7 +6,6 @@ set infile [open $name r]  ;#Create a file pointer and point it to the file to b
 set file_data [read $infile] ;#Assign file_data with contents of infile
 close $infile ;# Detach the file pointer from file to be read
 set lines [split $file_data “\n”]   
-set match "core_i"
 set components_list [list ]
 set nb_slacks_list [list ] ;#Number of slacks of each component that violates the threshold
 # Split the file contents by lines and assign each line to an element of list

@@ -58,3 +58,363 @@ U alu_i mult_i regfile_waddr_lsu_reg_ regfile_we_lsu_reg
 373 5777 5554 19 2
  
 -------------------------------------------------------------------------------------------------------
+Number of netlists with slacks lower than the threshold when Th = 0.5
+ 
+load_store_unit_i id_stage_i sleep_unit_i if_stage_i cs_registers_i ex_stage_i
+1962 27044 0 7464 2378 6350
+ 
+Block = load_store_unit_i
+U cnt_q_reg_ data_type_q_reg_ data_sign_ext_q_reg_ data_we_q_reg rdata_offset_q_reg_ rdata_q_reg_
+1894 4 0 0 0 0 64
+ 
+Block = id_stage_i
+U int_controller_i register_file_i controller_i decoder_i data_misaligned_ex_o_reg mhpmevent_branch_taken_o_reg mhpmevent_jr_stall_o_reg mhpmevent_ld_stall_o_reg id_valid_q_reg mhpmevent_minstret_o_reg csr_access_ex_o_reg data_req_ex_o_reg data_sign_ext_ex_o_reg_ data_type_ex_o_reg_ branch_in_ex_o_reg regfile_alu_we_ex_o_reg prepost_useincr_ex_o_reg regfile_we_ex_o_reg csr_op_ex_o_reg_ mhpmevent_compressed_o_reg mhpmevent_branch_o_reg mult_operator_ex_o_reg_ regfile_waddr_ex_o_reg_ mhpmevent_load_o_reg regfile_alu_waddr_ex_o_reg_ mhpmevent_imiss_o_reg mult_signed_mode_ex_o_reg_ mhpmevent_store_o_reg data_we_ex_o_reg mhpmevent_jump_o_reg mult_en_ex_o_reg alu_operator_ex_o_reg_ alu_en_ex_o_reg mult_operand_a_ex_o_reg_ alu_operand_a_ex_o_reg_ mult_operand_b_ex_o_reg_ alu_operand_b_ex_o_reg_ mult_operand_c_ex_o_reg_ alu_operand_c_ex_o_reg_
+8254 237 17055 441 421 1 0 0 0 2 2 4 2 2 4 2 2 4 2 8 2 2 4 10 2 10 0 4 2 2 2 2 24 2 76 128 73 128 64 64
+ 
+Block = sleep_unit_i
+U fetch_enable_q_reg core_busy_q_reg
+0 0 0
+ 
+Block = if_stage_i
+prefetch_buffer_i U aligner_i compressed_decoder_i instr_rdata_id_o_reg_ pc_id_o_reg_ is_compressed_id_o_reg illegal_c_insn_id_o_reg instr_valid_id_o_reg
+1916 2357 1482 1518 108 77 2 2 2
+ 
+Block = cs_registers_i
+U mscratch_q_reg_ dscratch gen_trigger_regs_tmatch_value_q_reg_ mie_q_reg_ mhpmcounter_q_reg_ mcountinhibit_q_reg_ mhpmevent_q_reg_ dcsr_q_reg_ebreakm_ dcsr_q_reg_step_ mtvec_mode_q_reg_ gen_trigger_regs_tmatch_control_exec_q_reg dcsr_q_reg_stepie_ dcsr_q_reg_cause__ mstatus_q_reg_mpie_ mstatus_q_reg_mie_ mcause_q_reg_ mepc_q_reg_ depc_q_reg_ mtvec_q_reg_
+2216 0 0 0 16 0 0 0 0 0 0 0 0 6 2 2 12 62 62 0
+ 
+Block = ex_stage_i
+U alu_i mult_i regfile_waddr_lsu_reg_ regfile_we_lsu_reg
+326 3584 2440 0 0
+ 
+-------------------------------------------------------------------------------------------------------
+Number of netlists with slacks lower than the threshold when Th = 0.1
+ 
+load_store_unit_i id_stage_i sleep_unit_i if_stage_i cs_registers_i ex_stage_i
+572 7910 0 4569 1669 1012
+ 
+Block = load_store_unit_i
+U cnt_q_reg_ data_type_q_reg_ data_sign_ext_q_reg_ data_we_q_reg rdata_offset_q_reg_ rdata_q_reg_
+529 0 0 0 0 0 43
+ 
+Block = id_stage_i
+U int_controller_i register_file_i controller_i decoder_i data_misaligned_ex_o_reg mhpmevent_branch_taken_o_reg mhpmevent_jr_stall_o_reg mhpmevent_ld_stall_o_reg id_valid_q_reg mhpmevent_minstret_o_reg csr_access_ex_o_reg data_req_ex_o_reg data_sign_ext_ex_o_reg_ data_type_ex_o_reg_ branch_in_ex_o_reg regfile_alu_we_ex_o_reg prepost_useincr_ex_o_reg regfile_we_ex_o_reg csr_op_ex_o_reg_ mhpmevent_compressed_o_reg mhpmevent_branch_o_reg mult_operator_ex_o_reg_ regfile_waddr_ex_o_reg_ mhpmevent_load_o_reg regfile_alu_waddr_ex_o_reg_ mhpmevent_imiss_o_reg mult_signed_mode_ex_o_reg_ mhpmevent_store_o_reg data_we_ex_o_reg mhpmevent_jump_o_reg mult_en_ex_o_reg alu_operator_ex_o_reg_ alu_en_ex_o_reg mult_operand_a_ex_o_reg_ alu_operand_a_ex_o_reg_ mult_operand_b_ex_o_reg_ alu_operand_b_ex_o_reg_ mult_operand_c_ex_o_reg_ alu_operand_c_ex_o_reg_
+5113 102 1903 257 83 0 0 0 0 0 0 2 0 0 0 0 0 2 0 3 0 0 0 0 0 0 0 0 0 0 0 1 18 1 64 85 64 89 64 59
+ 
+Block = sleep_unit_i
+U fetch_enable_q_reg core_busy_q_reg
+0 0 0
+ 
+Block = if_stage_i
+prefetch_buffer_i U aligner_i compressed_decoder_i instr_rdata_id_o_reg_ pc_id_o_reg_ is_compressed_id_o_reg illegal_c_insn_id_o_reg instr_valid_id_o_reg
+1228 1710 805 676 83 65 0 2 0
+ 
+Block = cs_registers_i
+U mscratch_q_reg_ dscratch gen_trigger_regs_tmatch_value_q_reg_ mie_q_reg_ mhpmcounter_q_reg_ mcountinhibit_q_reg_ mhpmevent_q_reg_ dcsr_q_reg_ebreakm_ dcsr_q_reg_step_ mtvec_mode_q_reg_ gen_trigger_regs_tmatch_control_exec_q_reg dcsr_q_reg_stepie_ dcsr_q_reg_cause__ mstatus_q_reg_mpie_ mstatus_q_reg_mie_ mcause_q_reg_ mepc_q_reg_ depc_q_reg_ mtvec_q_reg_
+1545 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 62 62 0
+ 
+Block = ex_stage_i
+U alu_i mult_i regfile_waddr_lsu_reg_ regfile_we_lsu_reg
+149 656 207 0 0
+ 
+-------------------------------------------------------------------------------------------------------
+Number of netlists with slacks lower than the threshold when Th = 0.2
+ 
+load_store_unit_i id_stage_i sleep_unit_i if_stage_i cs_registers_i ex_stage_i
+921 15844 0 6343 2060 2234
+ 
+Block = load_store_unit_i
+U cnt_q_reg_ data_type_q_reg_ data_sign_ext_q_reg_ data_we_q_reg rdata_offset_q_reg_ rdata_q_reg_
+864 0 0 0 0 0 57
+ 
+Block = id_stage_i
+U int_controller_i register_file_i controller_i decoder_i data_misaligned_ex_o_reg mhpmevent_branch_taken_o_reg mhpmevent_jr_stall_o_reg mhpmevent_ld_stall_o_reg id_valid_q_reg mhpmevent_minstret_o_reg csr_access_ex_o_reg data_req_ex_o_reg data_sign_ext_ex_o_reg_ data_type_ex_o_reg_ branch_in_ex_o_reg regfile_alu_we_ex_o_reg prepost_useincr_ex_o_reg regfile_we_ex_o_reg csr_op_ex_o_reg_ mhpmevent_compressed_o_reg mhpmevent_branch_o_reg mult_operator_ex_o_reg_ regfile_waddr_ex_o_reg_ mhpmevent_load_o_reg regfile_alu_waddr_ex_o_reg_ mhpmevent_imiss_o_reg mult_signed_mode_ex_o_reg_ mhpmevent_store_o_reg data_we_ex_o_reg mhpmevent_jump_o_reg mult_en_ex_o_reg alu_operator_ex_o_reg_ alu_en_ex_o_reg mult_operand_a_ex_o_reg_ alu_operand_a_ex_o_reg_ mult_operand_b_ex_o_reg_ alu_operand_b_ex_o_reg_ mult_operand_c_ex_o_reg_ alu_operand_c_ex_o_reg_
+6809 138 7956 322 106 0 0 0 0 0 0 2 0 0 0 0 0 2 0 4 0 0 2 6 0 6 0 1 0 0 0 2 23 2 64 106 64 101 64 64
+ 
+Block = sleep_unit_i
+U fetch_enable_q_reg core_busy_q_reg
+0 0 0
+ 
+Block = if_stage_i
+prefetch_buffer_i U aligner_i compressed_decoder_i instr_rdata_id_o_reg_ pc_id_o_reg_ is_compressed_id_o_reg illegal_c_insn_id_o_reg instr_valid_id_o_reg
+1663 2179 1132 1209 88 66 2 2 2
+ 
+Block = cs_registers_i
+U mscratch_q_reg_ dscratch gen_trigger_regs_tmatch_value_q_reg_ mie_q_reg_ mhpmcounter_q_reg_ mcountinhibit_q_reg_ mhpmevent_q_reg_ dcsr_q_reg_ebreakm_ dcsr_q_reg_step_ mtvec_mode_q_reg_ gen_trigger_regs_tmatch_control_exec_q_reg dcsr_q_reg_stepie_ dcsr_q_reg_cause__ mstatus_q_reg_mpie_ mstatus_q_reg_mie_ mcause_q_reg_ mepc_q_reg_ depc_q_reg_ mtvec_q_reg_
+1924 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12 62 62 0
+ 
+Block = ex_stage_i
+U alu_i mult_i regfile_waddr_lsu_reg_ regfile_we_lsu_reg
+248 1259 727 0 0
+ 
+-------------------------------------------------------------------------------------------------------
+Number of netlists with slacks lower than the threshold when Th = 0.05
+ 
+load_store_unit_i id_stage_i sleep_unit_i if_stage_i cs_registers_i ex_stage_i
+493 4849 0 2829 1252 568
+ 
+Block = load_store_unit_i
+U cnt_q_reg_ data_type_q_reg_ data_sign_ext_q_reg_ data_we_q_reg rdata_offset_q_reg_ rdata_q_reg_
+457 0 0 0 0 0 36
+ 
+Block = id_stage_i
+U int_controller_i register_file_i controller_i decoder_i data_misaligned_ex_o_reg mhpmevent_branch_taken_o_reg mhpmevent_jr_stall_o_reg mhpmevent_ld_stall_o_reg id_valid_q_reg mhpmevent_minstret_o_reg csr_access_ex_o_reg data_req_ex_o_reg data_sign_ext_ex_o_reg_ data_type_ex_o_reg_ branch_in_ex_o_reg regfile_alu_we_ex_o_reg prepost_useincr_ex_o_reg regfile_we_ex_o_reg csr_op_ex_o_reg_ mhpmevent_compressed_o_reg mhpmevent_branch_o_reg mult_operator_ex_o_reg_ regfile_waddr_ex_o_reg_ mhpmevent_load_o_reg regfile_alu_waddr_ex_o_reg_ mhpmevent_imiss_o_reg mult_signed_mode_ex_o_reg_ mhpmevent_store_o_reg data_we_ex_o_reg mhpmevent_jump_o_reg mult_en_ex_o_reg alu_operator_ex_o_reg_ alu_en_ex_o_reg mult_operand_a_ex_o_reg_ alu_operand_a_ex_o_reg_ mult_operand_b_ex_o_reg_ alu_operand_b_ex_o_reg_ mult_operand_c_ex_o_reg_ alu_operand_c_ex_o_reg_
+3499 96 605 210 30 0 0 0 0 0 0 2 0 0 0 0 0 2 0 2 0 0 0 0 0 0 0 0 0 0 0 0 13 1 62 73 63 69 64 58
+ 
+Block = sleep_unit_i
+U fetch_enable_q_reg core_busy_q_reg
+0 0 0
+ 
+Block = if_stage_i
+prefetch_buffer_i U aligner_i compressed_decoder_i instr_rdata_id_o_reg_ pc_id_o_reg_ is_compressed_id_o_reg illegal_c_insn_id_o_reg instr_valid_id_o_reg
+912 871 633 357 47 8 0 1 0
+ 
+Block = cs_registers_i
+U mscratch_q_reg_ dscratch gen_trigger_regs_tmatch_value_q_reg_ mie_q_reg_ mhpmcounter_q_reg_ mcountinhibit_q_reg_ mhpmevent_q_reg_ dcsr_q_reg_ebreakm_ dcsr_q_reg_step_ mtvec_mode_q_reg_ gen_trigger_regs_tmatch_control_exec_q_reg dcsr_q_reg_stepie_ dcsr_q_reg_cause__ mstatus_q_reg_mpie_ mstatus_q_reg_mie_ mcause_q_reg_ mepc_q_reg_ depc_q_reg_ mtvec_q_reg_
+1128 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 62 62 0
+ 
+Block = ex_stage_i
+U alu_i mult_i regfile_waddr_lsu_reg_ regfile_we_lsu_reg
+73 363 132 0 0
+ 
+-------------------------------------------------------------------------------------------------------
+Number of netlists with slacks lower than the threshold when Th = 0.01
+ 
+load_store_unit_i id_stage_i sleep_unit_i if_stage_i cs_registers_i ex_stage_i
+16 1243 0 871 273 215
+ 
+Block = load_store_unit_i
+U cnt_q_reg_ data_type_q_reg_ data_sign_ext_q_reg_ data_we_q_reg rdata_offset_q_reg_ rdata_q_reg_
+16 0 0 0 0 0 0
+ 
+Block = id_stage_i
+U int_controller_i register_file_i controller_i decoder_i data_misaligned_ex_o_reg mhpmevent_branch_taken_o_reg mhpmevent_jr_stall_o_reg mhpmevent_ld_stall_o_reg id_valid_q_reg mhpmevent_minstret_o_reg csr_access_ex_o_reg data_req_ex_o_reg data_sign_ext_ex_o_reg_ data_type_ex_o_reg_ branch_in_ex_o_reg regfile_alu_we_ex_o_reg prepost_useincr_ex_o_reg regfile_we_ex_o_reg csr_op_ex_o_reg_ mhpmevent_compressed_o_reg mhpmevent_branch_o_reg mult_operator_ex_o_reg_ regfile_waddr_ex_o_reg_ mhpmevent_load_o_reg regfile_alu_waddr_ex_o_reg_ mhpmevent_imiss_o_reg mult_signed_mode_ex_o_reg_ mhpmevent_store_o_reg data_we_ex_o_reg mhpmevent_jump_o_reg mult_en_ex_o_reg alu_operator_ex_o_reg_ alu_en_ex_o_reg mult_operand_a_ex_o_reg_ alu_operand_a_ex_o_reg_ mult_operand_b_ex_o_reg_ alu_operand_b_ex_o_reg_ mult_operand_c_ex_o_reg_ alu_operand_c_ex_o_reg_
+917 37 46 112 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 4 18 8 29 52 16
+ 
+Block = sleep_unit_i
+U fetch_enable_q_reg core_busy_q_reg
+0 0 0
+ 
+Block = if_stage_i
+prefetch_buffer_i U aligner_i compressed_decoder_i instr_rdata_id_o_reg_ pc_id_o_reg_ is_compressed_id_o_reg illegal_c_insn_id_o_reg instr_valid_id_o_reg
+290 169 265 137 9 0 0 1 0
+ 
+Block = cs_registers_i
+U mscratch_q_reg_ dscratch gen_trigger_regs_tmatch_value_q_reg_ mie_q_reg_ mhpmcounter_q_reg_ mcountinhibit_q_reg_ mhpmevent_q_reg_ dcsr_q_reg_ebreakm_ dcsr_q_reg_step_ mtvec_mode_q_reg_ gen_trigger_regs_tmatch_control_exec_q_reg dcsr_q_reg_stepie_ dcsr_q_reg_cause__ mstatus_q_reg_mpie_ mstatus_q_reg_mie_ mcause_q_reg_ mepc_q_reg_ depc_q_reg_ mtvec_q_reg_
+242 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 31 0
+ 
+Block = ex_stage_i
+U alu_i mult_i regfile_waddr_lsu_reg_ regfile_we_lsu_reg
+34 181 0 0 0
+ 
+-------------------------------------------------------------------------------------------------------
+Number of netlists with slacks lower than the threshold when Th = 0.02
+ 
+load_store_unit_i id_stage_i sleep_unit_i if_stage_i cs_registers_i ex_stage_i
+108 2022 0 1336 329 274
+ 
+Block = load_store_unit_i
+U cnt_q_reg_ data_type_q_reg_ data_sign_ext_q_reg_ data_we_q_reg rdata_offset_q_reg_ rdata_q_reg_
+108 0 0 0 0 0 0
+ 
+Block = id_stage_i
+U int_controller_i register_file_i controller_i decoder_i data_misaligned_ex_o_reg mhpmevent_branch_taken_o_reg mhpmevent_jr_stall_o_reg mhpmevent_ld_stall_o_reg id_valid_q_reg mhpmevent_minstret_o_reg csr_access_ex_o_reg data_req_ex_o_reg data_sign_ext_ex_o_reg_ data_type_ex_o_reg_ branch_in_ex_o_reg regfile_alu_we_ex_o_reg prepost_useincr_ex_o_reg regfile_we_ex_o_reg csr_op_ex_o_reg_ mhpmevent_compressed_o_reg mhpmevent_branch_o_reg mult_operator_ex_o_reg_ regfile_waddr_ex_o_reg_ mhpmevent_load_o_reg regfile_alu_waddr_ex_o_reg_ mhpmevent_imiss_o_reg mult_signed_mode_ex_o_reg_ mhpmevent_store_o_reg data_we_ex_o_reg mhpmevent_jump_o_reg mult_en_ex_o_reg alu_operator_ex_o_reg_ alu_en_ex_o_reg mult_operand_a_ex_o_reg_ alu_operand_a_ex_o_reg_ mult_operand_b_ex_o_reg_ alu_operand_b_ex_o_reg_ mult_operand_c_ex_o_reg_ alu_operand_c_ex_o_reg_
+1521 71 61 142 14 0 0 0 0 0 0 2 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 0 26 33 32 43 54 18
+ 
+Block = sleep_unit_i
+U fetch_enable_q_reg core_busy_q_reg
+0 0 0
+ 
+Block = if_stage_i
+prefetch_buffer_i U aligner_i compressed_decoder_i instr_rdata_id_o_reg_ pc_id_o_reg_ is_compressed_id_o_reg illegal_c_insn_id_o_reg instr_valid_id_o_reg
+431 325 340 218 21 0 0 1 0
+ 
+Block = cs_registers_i
+U mscratch_q_reg_ dscratch gen_trigger_regs_tmatch_value_q_reg_ mie_q_reg_ mhpmcounter_q_reg_ mcountinhibit_q_reg_ mhpmevent_q_reg_ dcsr_q_reg_ebreakm_ dcsr_q_reg_step_ mtvec_mode_q_reg_ gen_trigger_regs_tmatch_control_exec_q_reg dcsr_q_reg_stepie_ dcsr_q_reg_cause__ mstatus_q_reg_mpie_ mstatus_q_reg_mie_ mcause_q_reg_ mepc_q_reg_ depc_q_reg_ mtvec_q_reg_
+298 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 31 0
+ 
+Block = ex_stage_i
+U alu_i mult_i regfile_waddr_lsu_reg_ regfile_we_lsu_reg
+34 240 0 0 0
+ 
+-------------------------------------------------------------------------------------------------------
+Number of netlists with slacks lower than the threshold when Th = 0.03
+ 
+load_store_unit_i id_stage_i sleep_unit_i if_stage_i cs_registers_i ex_stage_i
+390 2840 0 2017 728 308
+ 
+Block = load_store_unit_i
+U cnt_q_reg_ data_type_q_reg_ data_sign_ext_q_reg_ data_we_q_reg rdata_offset_q_reg_ rdata_q_reg_
+356 0 0 0 0 0 34
+ 
+Block = id_stage_i
+U int_controller_i register_file_i controller_i decoder_i data_misaligned_ex_o_reg mhpmevent_branch_taken_o_reg mhpmevent_jr_stall_o_reg mhpmevent_ld_stall_o_reg id_valid_q_reg mhpmevent_minstret_o_reg csr_access_ex_o_reg data_req_ex_o_reg data_sign_ext_ex_o_reg_ data_type_ex_o_reg_ branch_in_ex_o_reg regfile_alu_we_ex_o_reg prepost_useincr_ex_o_reg regfile_we_ex_o_reg csr_op_ex_o_reg_ mhpmevent_compressed_o_reg mhpmevent_branch_o_reg mult_operator_ex_o_reg_ regfile_waddr_ex_o_reg_ mhpmevent_load_o_reg regfile_alu_waddr_ex_o_reg_ mhpmevent_imiss_o_reg mult_signed_mode_ex_o_reg_ mhpmevent_store_o_reg data_we_ex_o_reg mhpmevent_jump_o_reg mult_en_ex_o_reg alu_operator_ex_o_reg_ alu_en_ex_o_reg mult_operand_a_ex_o_reg_ alu_operand_a_ex_o_reg_ mult_operand_b_ex_o_reg_ alu_operand_b_ex_o_reg_ mult_operand_c_ex_o_reg_ alu_operand_c_ex_o_reg_
+2104 90 186 162 17 0 0 0 0 0 0 2 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 8 0 33 57 50 45 64 20
+ 
+Block = sleep_unit_i
+U fetch_enable_q_reg core_busy_q_reg
+0 0 0
+ 
+Block = if_stage_i
+prefetch_buffer_i U aligner_i compressed_decoder_i instr_rdata_id_o_reg_ pc_id_o_reg_ is_compressed_id_o_reg illegal_c_insn_id_o_reg instr_valid_id_o_reg
+578 581 538 282 32 5 0 1 0
+ 
+Block = cs_registers_i
+U mscratch_q_reg_ dscratch gen_trigger_regs_tmatch_value_q_reg_ mie_q_reg_ mhpmcounter_q_reg_ mcountinhibit_q_reg_ mhpmevent_q_reg_ dcsr_q_reg_ebreakm_ dcsr_q_reg_step_ mtvec_mode_q_reg_ gen_trigger_regs_tmatch_control_exec_q_reg dcsr_q_reg_stepie_ dcsr_q_reg_cause__ mstatus_q_reg_mpie_ mstatus_q_reg_mie_ mcause_q_reg_ mepc_q_reg_ depc_q_reg_ mtvec_q_reg_
+634 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49 45 0
+ 
+Block = ex_stage_i
+U alu_i mult_i regfile_waddr_lsu_reg_ regfile_we_lsu_reg
+36 272 0 0 0
+ 
+-------------------------------------------------------------------------------------------------------
+Number of netlists with slacks lower than the threshold when Th = 0.04
+ 
+load_store_unit_i id_stage_i sleep_unit_i if_stage_i cs_registers_i ex_stage_i
+447 3808 0 2417 929 351
+ 
+Block = load_store_unit_i
+U cnt_q_reg_ data_type_q_reg_ data_sign_ext_q_reg_ data_we_q_reg rdata_offset_q_reg_ rdata_q_reg_
+411 0 0 0 0 0 36
+ 
+Block = id_stage_i
+U int_controller_i register_file_i controller_i decoder_i data_misaligned_ex_o_reg mhpmevent_branch_taken_o_reg mhpmevent_jr_stall_o_reg mhpmevent_ld_stall_o_reg id_valid_q_reg mhpmevent_minstret_o_reg csr_access_ex_o_reg data_req_ex_o_reg data_sign_ext_ex_o_reg_ data_type_ex_o_reg_ branch_in_ex_o_reg regfile_alu_we_ex_o_reg prepost_useincr_ex_o_reg regfile_we_ex_o_reg csr_op_ex_o_reg_ mhpmevent_compressed_o_reg mhpmevent_branch_o_reg mult_operator_ex_o_reg_ regfile_waddr_ex_o_reg_ mhpmevent_load_o_reg regfile_alu_waddr_ex_o_reg_ mhpmevent_imiss_o_reg mult_signed_mode_ex_o_reg_ mhpmevent_store_o_reg data_we_ex_o_reg mhpmevent_jump_o_reg mult_en_ex_o_reg alu_operator_ex_o_reg_ alu_en_ex_o_reg mult_operand_a_ex_o_reg_ alu_operand_a_ex_o_reg_ mult_operand_b_ex_o_reg_ alu_operand_b_ex_o_reg_ mult_operand_c_ex_o_reg_ alu_operand_c_ex_o_reg_
+2771 93 403 185 24 0 0 0 0 0 0 2 0 0 0 0 0 2 0 2 0 0 0 0 0 0 0 0 0 0 0 0 9 1 34 67 57 57 64 37
+ 
+Block = sleep_unit_i
+U fetch_enable_q_reg core_busy_q_reg
+0 0 0
+ 
+Block = if_stage_i
+prefetch_buffer_i U aligner_i compressed_decoder_i instr_rdata_id_o_reg_ pc_id_o_reg_ is_compressed_id_o_reg illegal_c_insn_id_o_reg instr_valid_id_o_reg
+766 717 568 314 43 8 0 1 0
+ 
+Block = cs_registers_i
+U mscratch_q_reg_ dscratch gen_trigger_regs_tmatch_value_q_reg_ mie_q_reg_ mhpmcounter_q_reg_ mcountinhibit_q_reg_ mhpmevent_q_reg_ dcsr_q_reg_ebreakm_ dcsr_q_reg_step_ mtvec_mode_q_reg_ gen_trigger_regs_tmatch_control_exec_q_reg dcsr_q_reg_stepie_ dcsr_q_reg_cause__ mstatus_q_reg_mpie_ mstatus_q_reg_mie_ mcause_q_reg_ mepc_q_reg_ depc_q_reg_ mtvec_q_reg_
+806 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61 62 0
+ 
+Block = ex_stage_i
+U alu_i mult_i regfile_waddr_lsu_reg_ regfile_we_lsu_reg
+48 303 0 0 0
+ 
+-------------------------------------------------------------------------------------------------------
+Number of netlists with slacks lower than the threshold when Th = 0.06
+ 
+load_store_unit_i id_stage_i sleep_unit_i if_stage_i cs_registers_i ex_stage_i
+501 5543 0 3169 1386 674
+ 
+Block = load_store_unit_i
+U cnt_q_reg_ data_type_q_reg_ data_sign_ext_q_reg_ data_we_q_reg rdata_offset_q_reg_ rdata_q_reg_
+465 0 0 0 0 0 36
+ 
+Block = id_stage_i
+U int_controller_i register_file_i controller_i decoder_i data_misaligned_ex_o_reg mhpmevent_branch_taken_o_reg mhpmevent_jr_stall_o_reg mhpmevent_ld_stall_o_reg id_valid_q_reg mhpmevent_minstret_o_reg csr_access_ex_o_reg data_req_ex_o_reg data_sign_ext_ex_o_reg_ data_type_ex_o_reg_ branch_in_ex_o_reg regfile_alu_we_ex_o_reg prepost_useincr_ex_o_reg regfile_we_ex_o_reg csr_op_ex_o_reg_ mhpmevent_compressed_o_reg mhpmevent_branch_o_reg mult_operator_ex_o_reg_ regfile_waddr_ex_o_reg_ mhpmevent_load_o_reg regfile_alu_waddr_ex_o_reg_ mhpmevent_imiss_o_reg mult_signed_mode_ex_o_reg_ mhpmevent_store_o_reg data_we_ex_o_reg mhpmevent_jump_o_reg mult_en_ex_o_reg alu_operator_ex_o_reg_ alu_en_ex_o_reg mult_operand_a_ex_o_reg_ alu_operand_a_ex_o_reg_ mult_operand_b_ex_o_reg_ alu_operand_b_ex_o_reg_ mult_operand_c_ex_o_reg_ alu_operand_c_ex_o_reg_
+3966 96 786 220 48 0 0 0 0 0 0 2 0 0 0 0 0 2 0 2 0 0 0 0 0 0 0 0 0 0 0 0 13 1 64 75 64 81 64 59
+ 
+Block = sleep_unit_i
+U fetch_enable_q_reg core_busy_q_reg
+0 0 0
+ 
+Block = if_stage_i
+prefetch_buffer_i U aligner_i compressed_decoder_i instr_rdata_id_o_reg_ pc_id_o_reg_ is_compressed_id_o_reg illegal_c_insn_id_o_reg instr_valid_id_o_reg
+999 1006 684 405 55 19 0 1 0
+ 
+Block = cs_registers_i
+U mscratch_q_reg_ dscratch gen_trigger_regs_tmatch_value_q_reg_ mie_q_reg_ mhpmcounter_q_reg_ mcountinhibit_q_reg_ mhpmevent_q_reg_ dcsr_q_reg_ebreakm_ dcsr_q_reg_step_ mtvec_mode_q_reg_ gen_trigger_regs_tmatch_control_exec_q_reg dcsr_q_reg_stepie_ dcsr_q_reg_cause__ mstatus_q_reg_mpie_ mstatus_q_reg_mie_ mcause_q_reg_ mepc_q_reg_ depc_q_reg_ mtvec_q_reg_
+1262 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 62 62 0
+ 
+Block = ex_stage_i
+U alu_i mult_i regfile_waddr_lsu_reg_ regfile_we_lsu_reg
+92 409 173 0 0
+ 
+-------------------------------------------------------------------------------------------------------
+Number of netlists with slacks lower than the threshold when Th = 0.07
+ 
+load_store_unit_i id_stage_i sleep_unit_i if_stage_i cs_registers_i ex_stage_i
+507 6314 0 3653 1395 735
+ 
+Block = load_store_unit_i
+U cnt_q_reg_ data_type_q_reg_ data_sign_ext_q_reg_ data_we_q_reg rdata_offset_q_reg_ rdata_q_reg_
+471 0 0 0 0 0 36
+ 
+Block = id_stage_i
+U int_controller_i register_file_i controller_i decoder_i data_misaligned_ex_o_reg mhpmevent_branch_taken_o_reg mhpmevent_jr_stall_o_reg mhpmevent_ld_stall_o_reg id_valid_q_reg mhpmevent_minstret_o_reg csr_access_ex_o_reg data_req_ex_o_reg data_sign_ext_ex_o_reg_ data_type_ex_o_reg_ branch_in_ex_o_reg regfile_alu_we_ex_o_reg prepost_useincr_ex_o_reg regfile_we_ex_o_reg csr_op_ex_o_reg_ mhpmevent_compressed_o_reg mhpmevent_branch_o_reg mult_operator_ex_o_reg_ regfile_waddr_ex_o_reg_ mhpmevent_load_o_reg regfile_alu_waddr_ex_o_reg_ mhpmevent_imiss_o_reg mult_signed_mode_ex_o_reg_ mhpmevent_store_o_reg data_we_ex_o_reg mhpmevent_jump_o_reg mult_en_ex_o_reg alu_operator_ex_o_reg_ alu_en_ex_o_reg mult_operand_a_ex_o_reg_ alu_operand_a_ex_o_reg_ mult_operand_b_ex_o_reg_ alu_operand_b_ex_o_reg_ mult_operand_c_ex_o_reg_ alu_operand_c_ex_o_reg_
+4259 96 1243 233 50 0 0 0 0 0 0 2 0 0 0 0 0 2 0 2 0 0 0 0 0 0 0 0 0 0 0 1 13 1 64 76 64 85 64 59
+ 
+Block = sleep_unit_i
+U fetch_enable_q_reg core_busy_q_reg
+0 0 0
+ 
+Block = if_stage_i
+prefetch_buffer_i U aligner_i compressed_decoder_i instr_rdata_id_o_reg_ pc_id_o_reg_ is_compressed_id_o_reg illegal_c_insn_id_o_reg instr_valid_id_o_reg
+1088 1252 733 476 67 36 0 1 0
+ 
+Block = cs_registers_i
+U mscratch_q_reg_ dscratch gen_trigger_regs_tmatch_value_q_reg_ mie_q_reg_ mhpmcounter_q_reg_ mcountinhibit_q_reg_ mhpmevent_q_reg_ dcsr_q_reg_ebreakm_ dcsr_q_reg_step_ mtvec_mode_q_reg_ gen_trigger_regs_tmatch_control_exec_q_reg dcsr_q_reg_stepie_ dcsr_q_reg_cause__ mstatus_q_reg_mpie_ mstatus_q_reg_mie_ mcause_q_reg_ mepc_q_reg_ depc_q_reg_ mtvec_q_reg_
+1271 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 62 62 0
+ 
+Block = ex_stage_i
+U alu_i mult_i regfile_waddr_lsu_reg_ regfile_we_lsu_reg
+101 448 186 0 0
+ 
+-------------------------------------------------------------------------------------------------------
+Number of netlists with slacks lower than the threshold when Th = 0.08
+ 
+load_store_unit_i id_stage_i sleep_unit_i if_stage_i cs_registers_i ex_stage_i
+512 6875 0 4058 1462 816
+ 
+Block = load_store_unit_i
+U cnt_q_reg_ data_type_q_reg_ data_sign_ext_q_reg_ data_we_q_reg rdata_offset_q_reg_ rdata_q_reg_
+476 0 0 0 0 0 36
+ 
+Block = id_stage_i
+U int_controller_i register_file_i controller_i decoder_i data_misaligned_ex_o_reg mhpmevent_branch_taken_o_reg mhpmevent_jr_stall_o_reg mhpmevent_ld_stall_o_reg id_valid_q_reg mhpmevent_minstret_o_reg csr_access_ex_o_reg data_req_ex_o_reg data_sign_ext_ex_o_reg_ data_type_ex_o_reg_ branch_in_ex_o_reg regfile_alu_we_ex_o_reg prepost_useincr_ex_o_reg regfile_we_ex_o_reg csr_op_ex_o_reg_ mhpmevent_compressed_o_reg mhpmevent_branch_o_reg mult_operator_ex_o_reg_ regfile_waddr_ex_o_reg_ mhpmevent_load_o_reg regfile_alu_waddr_ex_o_reg_ mhpmevent_imiss_o_reg mult_signed_mode_ex_o_reg_ mhpmevent_store_o_reg data_we_ex_o_reg mhpmevent_jump_o_reg mult_en_ex_o_reg alu_operator_ex_o_reg_ alu_en_ex_o_reg mult_operand_a_ex_o_reg_ alu_operand_a_ex_o_reg_ mult_operand_b_ex_o_reg_ alu_operand_b_ex_o_reg_ mult_operand_c_ex_o_reg_ alu_operand_c_ex_o_reg_
+4572 102 1479 236 50 0 0 0 0 0 0 2 0 0 0 0 0 2 0 3 0 0 0 0 0 0 0 0 0 0 0 1 13 1 64 77 64 86 64 59
+ 
+Block = sleep_unit_i
+U fetch_enable_q_reg core_busy_q_reg
+0 0 0
+ 
+Block = if_stage_i
+prefetch_buffer_i U aligner_i compressed_decoder_i instr_rdata_id_o_reg_ pc_id_o_reg_ is_compressed_id_o_reg illegal_c_insn_id_o_reg instr_valid_id_o_reg
+1190 1384 775 581 78 48 0 2 0
+ 
+Block = cs_registers_i
+U mscratch_q_reg_ dscratch gen_trigger_regs_tmatch_value_q_reg_ mie_q_reg_ mhpmcounter_q_reg_ mcountinhibit_q_reg_ mhpmevent_q_reg_ dcsr_q_reg_ebreakm_ dcsr_q_reg_step_ mtvec_mode_q_reg_ gen_trigger_regs_tmatch_control_exec_q_reg dcsr_q_reg_stepie_ dcsr_q_reg_cause__ mstatus_q_reg_mpie_ mstatus_q_reg_mie_ mcause_q_reg_ mepc_q_reg_ depc_q_reg_ mtvec_q_reg_
+1338 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 62 62 0
+ 
+Block = ex_stage_i
+U alu_i mult_i regfile_waddr_lsu_reg_ regfile_we_lsu_reg
+114 509 193 0 0
+ 
+-------------------------------------------------------------------------------------------------------
+Number of netlists with slacks lower than the threshold when Th = 0.09
+ 
+load_store_unit_i id_stage_i sleep_unit_i if_stage_i cs_registers_i ex_stage_i
+525 7492 0 4334 1582 939
+ 
+Block = load_store_unit_i
+U cnt_q_reg_ data_type_q_reg_ data_sign_ext_q_reg_ data_we_q_reg rdata_offset_q_reg_ rdata_q_reg_
+489 0 0 0 0 0 36
+ 
+Block = id_stage_i
+U int_controller_i register_file_i controller_i decoder_i data_misaligned_ex_o_reg mhpmevent_branch_taken_o_reg mhpmevent_jr_stall_o_reg mhpmevent_ld_stall_o_reg id_valid_q_reg mhpmevent_minstret_o_reg csr_access_ex_o_reg data_req_ex_o_reg data_sign_ext_ex_o_reg_ data_type_ex_o_reg_ branch_in_ex_o_reg regfile_alu_we_ex_o_reg prepost_useincr_ex_o_reg regfile_we_ex_o_reg csr_op_ex_o_reg_ mhpmevent_compressed_o_reg mhpmevent_branch_o_reg mult_operator_ex_o_reg_ regfile_waddr_ex_o_reg_ mhpmevent_load_o_reg regfile_alu_waddr_ex_o_reg_ mhpmevent_imiss_o_reg mult_signed_mode_ex_o_reg_ mhpmevent_store_o_reg data_we_ex_o_reg mhpmevent_jump_o_reg mult_en_ex_o_reg alu_operator_ex_o_reg_ alu_en_ex_o_reg mult_operand_a_ex_o_reg_ alu_operand_a_ex_o_reg_ mult_operand_b_ex_o_reg_ alu_operand_b_ex_o_reg_ mult_operand_c_ex_o_reg_ alu_operand_c_ex_o_reg_
+4902 102 1718 257 71 0 0 0 0 0 0 2 0 0 0 0 0 2 0 3 0 0 0 0 0 0 0 0 0 0 0 1 14 1 64 80 64 88 64 59
+ 
+Block = sleep_unit_i
+U fetch_enable_q_reg core_busy_q_reg
+0 0 0
+ 
+Block = if_stage_i
+prefetch_buffer_i U aligner_i compressed_decoder_i instr_rdata_id_o_reg_ pc_id_o_reg_ is_compressed_id_o_reg illegal_c_insn_id_o_reg instr_valid_id_o_reg
+1200 1575 788 622 82 65 0 2 0
+ 
+Block = cs_registers_i
+U mscratch_q_reg_ dscratch gen_trigger_regs_tmatch_value_q_reg_ mie_q_reg_ mhpmcounter_q_reg_ mcountinhibit_q_reg_ mhpmevent_q_reg_ dcsr_q_reg_ebreakm_ dcsr_q_reg_step_ mtvec_mode_q_reg_ gen_trigger_regs_tmatch_control_exec_q_reg dcsr_q_reg_stepie_ dcsr_q_reg_cause__ mstatus_q_reg_mpie_ mstatus_q_reg_mie_ mcause_q_reg_ mepc_q_reg_ depc_q_reg_ mtvec_q_reg_
+1458 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 62 62 0
+ 
+Block = ex_stage_i
+U alu_i mult_i regfile_waddr_lsu_reg_ regfile_we_lsu_reg
+133 608 198 0 0
+ 
+-------------------------------------------------------------------------------------------------------
