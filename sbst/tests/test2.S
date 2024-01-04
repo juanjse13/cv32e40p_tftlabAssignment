@@ -22,11 +22,14 @@ test2:
 
 
     # You can write your code here
-	#Initialize registers with values
 	li s2, 0xA19864F3 
 	li s3, 0xBAF99914
-
-
+	add s4, s2, s3
+	sub s5, s4, s3
+	addi s2, s4, 0x00000093
+	slt s6, s2, s5
+	div s6, s4, s5
+	rem s7, s3, s4
 
 
 

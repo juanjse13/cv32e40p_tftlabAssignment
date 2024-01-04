@@ -23,6 +23,10 @@ test1:
 
     # You can write your code here 
 
+	#Initialize registers with values
+
+
+
     li a0, 0xCAFECAFE    # return value
 
 
