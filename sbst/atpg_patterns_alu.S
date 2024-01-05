@@ -3,7 +3,6 @@
   li s3, 0xA1C345B9
   li t0, 0x3E86F207
   add s4, s2, s3
-  
   sub s5, s4, s3
   addi s8, s4, 0x000001E5
   slt s6, s2, s5
@@ -70,3 +69,5 @@
   slli s4, t0, 0x00000015
   srli s5, t1, 0x00000006
   srai s5, t2, 0x0000001D
+
+  
