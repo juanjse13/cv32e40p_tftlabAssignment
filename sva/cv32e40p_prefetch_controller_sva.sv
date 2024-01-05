@@ -30,7 +30,7 @@
 module cv32e40p_prefetch_controller_sva
 #(
   parameter DEPTH = 4,
-  parameter COREV_PULP = 0,
+  parameter COREV_PULP = 1,
   parameter PULP_OBI = 0 ,
   parameter FIFO_ADDR_DEPTH = (DEPTH > 1) ? $clog2(DEPTH) : 1
 )(
