@@ -25,28 +25,37 @@ _start:
 /* initialize stack pointer */
 	la sp, _sp
 
-/* set vector table address and vectored mode */
+/* set vector table address */
 	la a0, __vector_start
-        ori a0, a0, 0x1
 	csrw mtvec, a0
 
 /* clear the bss segment */
 	la a0, __bss_start
-	la a2, __bss_end
-	sub a2, a2, a0
-	li a1, 0
-	call memset
+    la a2, __bss_end
+    sub a2, a2, a0
+    li a1, 0
+    call memset
 
 /* new-style constructors and destructors */
-	la a0, __libc_fini_array
-	call atexit
-	call __libc_init_array
+   la a0, __libc_fini_array
+   call atexit
+call __libc_init_array
 
 /* call main */
-	lw a0, 0(sp)                    /* a0 = argc */
-	addi a1, sp, __SIZEOF_POINTER__ /* a1 = argv */
-	li a2, 0                        /* a2 = envp = NULL */
-	call main
+//	lw a0, 0(sp)                    /* a0 = argc */
+//	addi a1, sp, __SIZEOF_POINTER__ /* a1 = argv */
+//	li a2, 0                        /* a2 = envp = NULL */
+//	call main
+
+
+/************* YOUR ASSEMBLY CODE (BEGIN) ****************************/
+
+#include "atpg_patterns_alu.S"
+
+
+
+/************* YOUR ASSEMBLY CODE (END) *****************************/
+
 	tail exit
 
 .size  _start, .-_start

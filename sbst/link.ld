@@ -27,12 +27,12 @@ MEMORY
 SECTIONS
 {
   /* we want a fixed entry point */
-  PROVIDE(__boot_address = 0x180);
+  PROVIDE(__boot_address = 0x80);
 
   /* stack and heap related settings */
-  __stack_size = DEFINED(__stack_size) ? __stack_size : 0x1000;
+  __stack_size = DEFINED(__stack_size) ? __stack_size : 0x400;
   PROVIDE(__stack_size = __stack_size);
-  __heap_size = DEFINED(__heap_size) ? __heap_size : 0x1000;
+  __heap_size = DEFINED(__heap_size) ? __heap_size : 0x400;
 
 
   /* Read-only sections, merged into text segment: */

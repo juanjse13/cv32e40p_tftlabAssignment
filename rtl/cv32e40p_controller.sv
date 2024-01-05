@@ -31,7 +31,7 @@
 module cv32e40p_controller import cv32e40p_pkg::*;
 #(
   parameter COREV_CLUSTER = 0,
-  parameter COREV_PULP    = 0,
+  parameter COREV_PULP    = 1,
   parameter FPU           = 0
 )
 (

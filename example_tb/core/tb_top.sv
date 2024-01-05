@@ -17,7 +17,7 @@ module tb_top #(
     parameter INSTR_RDATA_WIDTH = 32,
     parameter RAM_ADDR_WIDTH = 22,
     parameter BOOT_ADDR = 'h180,
-    parameter PULP_XPULP = 0,
+    parameter PULP_XPULP = 1,
     parameter PULP_CLUSTER = 0,
     parameter FPU = 0,
     parameter ZFINX = 0,

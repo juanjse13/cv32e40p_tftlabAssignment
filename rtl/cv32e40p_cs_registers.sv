@@ -39,7 +39,7 @@ module cv32e40p_cs_registers
     parameter USE_PMP          = 0,
     parameter N_PMP_ENTRIES    = 16,
     parameter NUM_MHPMCOUNTERS = 1,
-    parameter COREV_PULP       = 0,
+    parameter COREV_PULP       = 1,
     parameter COREV_CLUSTER    = 0,
     parameter DEBUG_TRIGGER_EN = 1
 ) (

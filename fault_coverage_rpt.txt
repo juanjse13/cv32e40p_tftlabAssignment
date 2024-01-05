@@ -1,19 +1,19 @@
 #                                Total Run Times                                 
 #
 #                              Queued             CPU               Wall  
-# Fault simulation            00:00:00          00:00:07          00:00:07
-# Toggle simulation           00:00:00          00:00:01          00:00:05
+# Fault simulation            00:00:00          00:00:02          00:00:02
+# Toggle simulation           00:00:00          00:00:01          00:00:04
 #
 #
 #                            Time Allocation Per Tool                            
 #
 #                                   Queued                Running      
-# Fault simulation            00:00:00     0.00%     00:00:06    62.66%
-# Fault creation              00:00:00     0.00%     00:00:01     9.92%
-# Fault results recording     00:00:00     0.00%     00:00:01     5.93%
-# Testability                 00:00:00     0.00%     00:00:01     8.66%
-# Toggle simulation           00:00:00     0.00%     00:00:00     4.37%
-# Fault coverage              00:00:00     0.00%     00:00:01     8.46%
+# Fault simulation            00:00:00     0.00%     00:00:01    26.88%
+# Fault creation              00:00:00     0.00%     00:00:01    19.74%
+# Fault results recording     00:00:00     0.00%     00:00:01    11.45%
+# Testability                 00:00:00     0.00%     00:00:01    19.13%
+# Toggle simulation           00:00:00     0.00%     00:00:00     6.17%
+# Fault coverage              00:00:00     0.00%     00:00:01    16.63%
 #----------------------------------------------------------------------
-# Total                       00:00:00     0.00%     00:00:09   100.00%
-CPU Time: 9.6s ; Elapsed Time: 19.6s ; Data Size: 271.6MB
+# Total                       00:00:00     0.00%     00:00:05   100.00%
+CPU Time: 4.9s ; Elapsed Time: 14.1s ; Data Size: 271.6MB
