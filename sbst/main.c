@@ -12,6 +12,7 @@ int main()
 	
 	signatures[TEST1] = test1();
 	signatures[TEST2] = test2();
+	signatures[TEST3] = test3();
 
 	for(i=0; i<NUMTESTS; i++) {
 		fails += signatures[i] != GOLDEN_SIGNATURES[i];
