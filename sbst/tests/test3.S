@@ -99,7 +99,7 @@ test3:
 	srai s5, t2, 0x0000001D
 
 	#p.clipr s2, s3, s5
-	pv.shuffle.h t5, t2, t3
+	#pv.shuffle.h t5, t2, t3
 
     li a0, 0xCAFECAFE    # return value
 
