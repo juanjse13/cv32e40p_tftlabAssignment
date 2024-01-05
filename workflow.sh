@@ -1,3 +1,9 @@
+if [ "$#" -ne 1 ]; then
+    echo "Missing parameter"
+    echo "Usage: $0 threshold"
+    exit 1
+fi
+
 #make clean
 make pt/generate_gsf #generate gsf file
 make compile_sbst #cross compilation
