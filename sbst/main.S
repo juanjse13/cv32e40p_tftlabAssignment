@@ -51,6 +51,10 @@ call __libc_init_array
 /************* YOUR ASSEMBLY CODE (BEGIN) ****************************/
 
 #include "atpg_patterns_alu.S"
+#include "atpg_patterns_alu.S"
+#include "cnt_test.S"
+#include "div_test.S"
+
 
 
 

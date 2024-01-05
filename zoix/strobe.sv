@@ -37,6 +37,7 @@ initial begin
                 $fs_strobe(`TOPLEVEL.data_addr_o);
                 $fs_strobe(`TOPLEVEL.data_wdata_o);
                 $fs_strobe(`TOPLEVEL.data_be_o);
+                $fs_strobe(`TOPLEVEL.core_i.ex_stage_i.alu_i.result_o);
 
 
 
