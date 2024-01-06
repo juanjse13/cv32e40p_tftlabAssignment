@@ -1,19 +1,19 @@
-#                                Total Run Times                                 
-#
-#                              Queued             CPU               Wall  
-# Fault simulation            00:00:00          00:00:45          00:00:45
-# Toggle simulation           00:00:00          00:00:05          00:00:08
-#
-#
-#                            Time Allocation Per Tool                            
-#
-#                                   Queued                Running      
-# Fault simulation            00:00:00     0.00%     00:00:44    85.57%
-# Fault creation              00:00:00     0.00%     00:00:01     1.64%
-# Fault results recording     00:00:00     0.00%     00:00:01     1.16%
-# Testability                 00:00:00     0.00%     00:00:01     1.70%
-# Toggle simulation           00:00:00     0.00%     00:00:04     8.38%
-# Fault coverage              00:00:00     0.00%     00:00:01     1.55%
-#----------------------------------------------------------------------
-# Total                       00:00:00     0.00%     00:00:52   100.00%
-CPU Time: 51.6s ; Elapsed Time: 61.1s ; Data Size: 271.6MB
+>  
+> design() 
+24/01/06 20:33:17 CMD: cp /home/s307276/cv32e40p_tftlabAssignment/run/zoix_timing/cv32e40p_top_sdd_K.rpt __globfiles__/cv32e40p_top_sdd_K.rpt
+Note:    Generating design fault universe file
+24/01/06 20:33:17 CMD: /eda/synopsys/2022-23/RHELx86/Z01X_2022.06-SP2/bin/fr2fdef -fr __globfiles__/cv32e40p_top_sdd_K.rpt +warnreturn+0 +format+standard +verbose -l fr2fdef.log
+Note:    Job fr2fdef begun
+Error:   Job fr2fdef failed: Host: po Exit Code: 1
+Error:   Error generating fault list
+         Refer to log file ./fr2fdef.log
+Note:    Total: 0 Prime: 0 Collapsed: 0 Untestable: 0
+Note:    Fault Generation Completed 1 Errors 0 Warnings
+Error:   Error initializing design sim.
+Note:    Removing design entry from design dictionary
+Note:    Removed tests directory
+Note:    Removed globfiles directory
+Note:    Removed database directory
+Note:    Removed tmpfiles directory
+Note:    Removed fmdict directory
+Note:    Design remove complete
