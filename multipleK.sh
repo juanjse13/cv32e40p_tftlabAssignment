@@ -1,12 +1,3 @@
-#make clean
-make pt/generate_gsf #generate gsf file
-make compile_sbst #cross compilation
-make questa/compile #compile files
-make questa/lsim/gate/shell #logic simulation
-make zoix/compile #To compile the zoix
-make zoix/lsim #To verify th eVCD stimuli
-
-
 seq $1 $2 $3 | \
 while read currentk
 do
