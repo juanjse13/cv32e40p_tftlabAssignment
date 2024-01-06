@@ -1,7 +1,7 @@
 read -p "Select the first k: " initialK
 echo "First K: $initialK"
 read -p "Select the step: " step
-echo "First K: $initialK"
+echo "First K: $step"
 read -p "Select the last k " lastK
 echo "Last L: $lastK"
 
