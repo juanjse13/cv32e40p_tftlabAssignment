@@ -6,7 +6,6 @@ if [[ $answer =~ ^[Yy]$ ]]; then
     echo -n > "results/only_K/CPU_time.txt"
     echo -n > "results/only_K/K_values.txt"
     echo -n > "results/only_K/Test_application_time.txt"
-    echo "test"
     fi
     if [[ "$1" == "m" ]]; then
     echo -n > "results/both/Coverage.txt"

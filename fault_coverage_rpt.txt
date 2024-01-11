@@ -1,1 +1,22 @@
-# [TESTBENCH] 277260ns: test application time = 27721 clock cycles (277210 ns)
+# [TESTBENCH] 4190ns: test application time = 414 clock cycles (4140 ns)
+# End time: 17:43:14 on Jan 11,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+#                                Total Run Times                                 
+#
+#                              Queued             CPU               Wall  
+# Fault simulation            00:00:00          00:00:11          00:00:11
+# Toggle simulation           00:00:00          00:00:01          00:00:05
+#
+#
+#                            Time Allocation Per Tool                            
+#
+#                                   Queued                Running      
+# Fault simulation            00:00:00     0.00%     00:00:10    72.67%
+# Fault creation              00:00:00     0.00%     00:00:01     6.88%
+# Fault results recording     00:00:00     0.00%     00:00:01     4.46%
+# Testability                 00:00:00     0.00%     00:00:01     6.66%
+# Toggle simulation           00:00:00     0.00%     00:00:00     3.46%
+# Fault coverage              00:00:00     0.00%     00:00:01     5.87%
+#----------------------------------------------------------------------
+# Total                       00:00:00     0.00%     00:00:14   100.00%
+CPU Time: 13.7s ; Elapsed Time: 23.6s ; Data Size: 271.7MB

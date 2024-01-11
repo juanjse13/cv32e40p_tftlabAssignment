@@ -1,0 +1,3 @@
+276750 32.88% all files
+51610 31.93% excluding div_test
+4140 29.03% only test1 
