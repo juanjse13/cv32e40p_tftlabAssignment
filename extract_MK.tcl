@@ -6,10 +6,10 @@ set file_data [read $infile] ;#Assign file_data with contents of infile
 close $infile ;# Detach the file pointer from file to be read
 set lines [split $file_data “\n”]   
 
-set fileHandle [open "results/both/CPU_time.txt" a]
+set fileHandle [open "results/both/Test_application_time.txt" a]
 foreach element $lines { 
     #puts $element
-    set pattern {CPU Time: ([0-9]+\.[0-9]+)}
+    set pattern {cycles \(([0-9]+) ns\)}
     
     if {[regexp $pattern $element match match2]} {
         puts $fileHandle "$match2"

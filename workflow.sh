@@ -3,7 +3,7 @@ if [ "$#" -eq 1 ]; then
     make pt/generate_gsf #generate gsf file
     make compile_sbst #cross compilation
     make questa/compile #compile files
-    make questa/lsim/gate/shell #logic simulation
+    make questa/lsim/gate/shell | tail -n 3 > fault_coverage_rpt.txt #logic simulation
     make zoix/compile #To compile the zoix
     make zoix/lsim #To verify th eVCD stimuli
     make zoix/fgen/sdd K=$1 #Generate fault list
@@ -14,7 +14,7 @@ if [ "$#" -eq 2 ]; then
     make pt/generate_gsf #generate gsf file
     make compile_sbst #cross compilation
     make questa/compile #compile files
-    make questa/lsim/gate/shell #logic simulation
+    make questa/lsim/gate/shell | tail -n 3 > fault_coverage_rpt.txt #logic simulation
     make zoix/compile #To compile the zoix
     make zoix/lsim #To verify th eVCD stimuli
     make zoix/fgen/sdd K=$1 M=$2 #Generate fault list
