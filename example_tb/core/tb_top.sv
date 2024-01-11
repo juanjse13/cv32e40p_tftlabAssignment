@@ -43,6 +43,7 @@ module tb_top #(
 
   // cycle counter
   int unsigned        cycle_cnt_q;
+  int unsigned        cycle_cnt_tat;
 
   // testbench result
   logic               tests_passed;
@@ -62,6 +63,19 @@ module tb_top #(
       $dumpfile("riscy_tb.vcd");
       $dumpvars(0, tb_top);
     end
+  end
+
+  always_ff@(posedge clk, negedge rst_n) begin
+
+    if (~rst_n) begin
+      cycle_cnt_tat <= 0;
+    end else begin
+      cycle_cnt_tat <= cycle_cnt_tat + 1;
+    end 
+  end
+
+  final begin
+    $display("[TESTBENCH] %0t: test application time = %0d clock cycles (%0d ns)", $time, cycle_cnt_tat, cycle_cnt_tat*CLK_PERIOD);
   end
 
   // we either load the provided firmware or execute a small test program that
