@@ -3,14 +3,14 @@
 
 #define TEST1 0
 #define TEST2 1
-//#define TEST3 2
-#define NUMTESTS 2
+#define TEST3 2
+#define NUMTESTS 3
 
 typedef unsigned int signature_t;
 
 extern signature_t test1(void);
 extern signature_t atpg_patterns_DIV(void);
-//extern signature_t div_test(void);
+extern signature_t div_test(void);
 
 
 
