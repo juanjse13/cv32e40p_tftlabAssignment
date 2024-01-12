@@ -13,8 +13,8 @@ int main()
 	signature_t signatures[NUMTESTS];
 	
 	signatures[TEST1] = test1();
-	//signatures[TEST2] = atpg_patterns_DIV();
-	signatures[TEST3] = div_test();	
+	signatures[TEST2] = atpg_patterns_DIV();
+	//signatures[TEST3] = div_test();	
 	
 
 	for(i=0; i<NUMTESTS; i++) {

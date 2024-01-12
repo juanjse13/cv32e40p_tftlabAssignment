@@ -1,3 +1,3 @@
-# [TESTBENCH] 229570ns: test application time = 22952 clock cycles (229520 ns)
-# End time: 21:15:25 on Jan 11,2024, Elapsed time: 0:00:05
+# [TESTBENCH] 51660ns: test application time = 5161 clock cycles (51610 ns)
+# End time: 09:45:30 on Jan 12,2024, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
